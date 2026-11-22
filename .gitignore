@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+.DS_Store
+.streamlit/secrets.toml
+# raw data is never committed; see data/README.md
+data/raw/*
+!data/raw/.gitkeep
+*.csv
+!data/sample/products_sample.csv

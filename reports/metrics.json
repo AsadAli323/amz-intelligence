@@ -1,0 +1,41 @@
+{
+  "rows_after_cleaning": 8819,
+  "demand": {
+    "task": "3-class demand tier",
+    "rows": 7299,
+    "best_model": "Random Forest",
+    "majority_baseline_accuracy": 0.4808,
+    "results": {
+      "Logistic Regression": {
+        "accuracy": 0.6116,
+        "macro_f1": 0.6178
+      },
+      "Random Forest": {
+        "accuracy": 0.6377,
+        "macro_f1": 0.6423
+      },
+      "LightGBM": {
+        "accuracy": 0.6233,
+        "macro_f1": 0.6264
+      }
+    }
+  },
+  "price": {
+    "task": "price regression",
+    "rows": 8354,
+    "best_model": "Ridge",
+    "median_baseline_mae_usd": 159.27,
+    "results": {
+      "Ridge": {
+        "mae_usd": 84.09,
+        "mape_pct": 55.3,
+        "r2_log_price": 0.787
+      },
+      "LightGBM": {
+        "mae_usd": 85.51,
+        "mape_pct": 63.0,
+        "r2_log_price": 0.7481
+      }
+    }
+  }
+}
